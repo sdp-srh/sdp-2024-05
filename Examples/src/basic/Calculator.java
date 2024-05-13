@@ -3,8 +3,10 @@ package basic;
 public class Calculator {
 
 	public static void main(String[] args) {
+		String str = "test";
+		System.out.println(str.length());
 		int a = 5;
-		int b = 2;
+		int b = 1;
 		System.out.println("Values: "+a+", "+b);
 		System.out.println();
 		System.out.println("add: \t\t" + add(a,b));
