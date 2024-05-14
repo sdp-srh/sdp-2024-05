@@ -11,6 +11,7 @@ public class Car {
 		this.brand="Unknown";
 		this.doors = 0;
 		this.speed = 0;
+		// static counter
 		Car.createdCars++;
 	}
 	
