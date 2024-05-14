@@ -4,15 +4,18 @@ public class DecisionMakingStatements {
 
 	public static void main(String[] args) {
 		// variable definitions
-		int x = 5;
-		int y = 10;
+		int x = 0;
+		int y = 8;
 		int z = 20;
 		
 		String universityName = "SRH Heidelberg";
 		
 		// simple if
-		if (x > 10) {
-			System.out.println("x has more than one digit");
+		if (x >= 10 && y > 9) {
+			System.out.println("x and y have more than one digit");
+		}
+		else {
+			System.out.println("one of the numbers is less than 10");
 		}
 		
 		if (universityName.startsWith("SRH")) {
@@ -26,7 +29,7 @@ public class DecisionMakingStatements {
 		else {
 			System.out.println("x has one digit");
 		}
-
+		
 		// if else if ladder
 		if (x > 10) {
 			System.out.println("x has more than one digit");
@@ -37,7 +40,6 @@ public class DecisionMakingStatements {
 		else {
 			System.out.println("x is zero");
 		}
-		
 		// nested if
 		if ( x > 0) {
 			System.out.println("x is positive");
@@ -60,6 +62,7 @@ public class DecisionMakingStatements {
 			default: 
 				System.out.println("value is positive");
 		}
+		
 	}
 	
 	

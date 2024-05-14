@@ -6,14 +6,17 @@ public class LoopStatements {
 		
 		
 		// loop statement
-		for (int i = 0; i < 20; i++) {
+		
+		for (int i = 0; i < 20; i+=5) {
 			System.out.println(i*i);
 		}
 		
+	
 		// example with string
-		String text = "SRH SDP Course 2023";
+		
+		String text = "SRH SDP";
 		for (int i = 0; i < text.length(); i++) {
-			System.out.println(text.charAt(i));
+			System.out.println(""+i+":"+text.charAt(i));
 		}
 		
 		int x = 15;
@@ -21,6 +24,7 @@ public class LoopStatements {
 			System.out.println(x + " left");
 			x = x - 1; // x-- or x -= 1 are the shorter forms
 		}
+		
 		
 		int y = 0;
 		do {
@@ -37,6 +41,7 @@ public class LoopStatements {
 		for (int i = 0; i < names.length; i++) {
 			System.out.println("Name("+i+"): " + names[i]);
 		}
+				
 		
 	}
 

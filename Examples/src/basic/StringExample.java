@@ -12,8 +12,8 @@ public class StringExample {
 		System.out.println(s2);
 
 		
-		String s3 = "sdp2022";
-		String s4 = s3.replace("22", "23");
+		String s3 = "sdp2023";
+		String s4 = s3.replace("23", "24");
 		System.out.println(s4);
 		
 		
@@ -23,6 +23,11 @@ public class StringExample {
 		
 		String sconcat = s.concat(" Tendulkar");
 		System.out.println(sconcat);
+		int x = 5;
+		if (s == "Sachin") {
+			System.out.println(s+" is Sachin");
+		}
+		
 	}
 	
 	
