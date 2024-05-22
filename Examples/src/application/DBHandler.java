@@ -34,7 +34,7 @@ public class DBHandler {
 	         System.err.println(e.getClass().getName()+": "+e.getMessage());
 	         System.exit(0);
 	      }
-	      System.out.println("Opened database successfully");
+	      System.out.println("Opened database connection successfully");
 		}
 		return conn;
 	}
@@ -69,12 +69,16 @@ public class DBHandler {
 			Statement stmt = DBHandler.getConnection().createStatement();
 			String sql = "SELECT * FROM \"Person\"";
 			ResultSet rs = stmt.executeQuery(sql);
+			int counter = 0;
 	        while ( rs.next() ) {
 	            String firstname = rs.getString("firstname");
 	            String lastname  = rs.getString("lastname");
 	            Person p = new Person(firstname, lastname);
 	            result.add(p);
-	         }	
+	            counter++;
+	            System.out.println("Row: "+counter+" "+p.getFirstName());
+	            
+	        }	
 	        rs.close();
 			stmt.close();
 		} catch (SQLException e) {
