@@ -21,10 +21,11 @@ import application.Person;
 public class CreatePersonPanel extends JPanel implements ActionListener {
 	
 	public static final String SAVE_PERSON_COMMAND = "SAVE_PERSON";
+	public static final String RESET_FORM = "RESET_FORM";
 	// the fields are important to get the first and last name
-	JTextField firstNameField;
-	JTextField lastNameField;
-	JButton saveButton;
+	private JTextField firstNameField;
+	private JTextField lastNameField;
+	private JButton saveButton;
 	
 	
 	public CreatePersonPanel() {
@@ -52,6 +53,12 @@ public class CreatePersonPanel extends JPanel implements ActionListener {
 		saveButton.setActionCommand(SAVE_PERSON_COMMAND);
 		saveButton.addActionListener(this);
 		this.add(saveButton);
+		
+		JButton resetButton = new JButton("Reset");
+		resetButton.setActionCommand(RESET_FORM);
+		resetButton.addActionListener(this);
+		this.add(resetButton);
+		
 	}
 
 	@Override
@@ -67,6 +74,10 @@ public class CreatePersonPanel extends JPanel implements ActionListener {
 			DBHandler dbh = new DBHandler();
 			dbh.insertPerson(newPerson);
 			System.out.println("New Person created");
+		}
+		if (RESET_FORM.equals(e.getActionCommand())) {
+			firstNameField.setText("");
+			lastNameField.setText("");
 		}
 		
 	}

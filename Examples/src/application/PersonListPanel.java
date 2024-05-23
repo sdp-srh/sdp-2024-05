@@ -3,6 +3,7 @@ package application;
 import java.util.ArrayList;
 
 import javax.swing.BoxLayout;
+import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
@@ -23,6 +24,7 @@ public class PersonListPanel extends JPanel {
 		for (Person p: persons) {
 			String personText = p.getFirstName()+" "+p.getLastName();
 			JLabel label = new JLabel(personText);
+			//JButton b = new JButton(personText);
 			this.add(label);
 		}
 	}
