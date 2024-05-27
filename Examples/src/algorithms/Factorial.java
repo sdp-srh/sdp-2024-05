@@ -19,8 +19,10 @@ public class Factorial {
 	
 	public static int iterativeFactorial(int n) {
 		int result = 1;
-		for (int i=1;i<n+1;i++) {
+		for (int i=1;i <= n;i++) {
+		
 			result = result * i;
+			System.out.println(""+i+"  -> "+result);
 		}
 		return result;
 	}

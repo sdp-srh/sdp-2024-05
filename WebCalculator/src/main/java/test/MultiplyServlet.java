@@ -18,19 +18,18 @@ public class MultiplyServlet extends HttpServlet {
      */
     public MultiplyServlet() {
         super();
-        // TODO Auto-generated constructor stub
     }
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		String a = request.getParameter("a");
 		String b = request.getParameter("b");
 		System.out.println(a+ ","+b);
 		int result = Integer.parseInt(a) + Integer.parseInt(b);
 		// String text = "Result is : ?";
+		System.out.println("The result is "+result);
 		response.getWriter().append(""+result);
 	}
 

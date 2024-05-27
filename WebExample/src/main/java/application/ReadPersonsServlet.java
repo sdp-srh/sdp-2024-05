@@ -44,7 +44,7 @@ public class ReadPersonsServlet extends HttpServlet {
 		result += "</body>";
 		result += "</html>";
 		// send the response to the browser
-		response.setStatus(418);
+		response.setStatus(200);
 		response.getWriter().append(result);
 	}
 

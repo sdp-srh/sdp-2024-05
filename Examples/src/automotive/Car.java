@@ -88,7 +88,7 @@ public class Car extends Vehicle {
 
 
 	public String getColor() {
-		return color;
+		return this.color;
 	}
 
 

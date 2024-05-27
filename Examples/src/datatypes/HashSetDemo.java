@@ -18,7 +18,7 @@ public class HashSetDemo {
 	}
 
 	public static void main(String[] args) {
-		String s = "hello xqty ";
+		String s = "helo xqty ";
 		boolean ans = isUnique(s);
 		if (ans)
 			System.out.println("string has unique characters");
