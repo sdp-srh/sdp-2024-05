@@ -20,9 +20,13 @@ public class FileNotFoundExample {
 			//File file = new File("C://xyz.txt");
 			//FileReader fr = new FileReader(file);
 			File file2 = readMyFile("C://xyz.txt");
+			
 		} catch (MyFileNotFoundException e) {
 			e.printStackTrace();
 			e.getMessage();
 		}
+		
+		
+			System.out.println("Finished");
 	}
 }

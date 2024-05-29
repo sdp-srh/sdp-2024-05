@@ -15,6 +15,9 @@ public class CatchExample {
 			e.printStackTrace();
 		}
 		finally {
+			if (result == -1) {
+				result =0;
+			}
 			System.out.println("Finally is always executed");
 		}
 		

@@ -8,6 +8,7 @@ public class IndexExample {
 		try {
 			String s = "Test";
 			int l = s.length();
+			System.out.println(l);
 			test = array[5];	
 		} catch (ArrayIndexOutOfBoundsException e) {
 			e.printStackTrace();
