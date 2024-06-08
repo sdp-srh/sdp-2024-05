@@ -31,4 +31,15 @@
     <url-pattern>/MultiplyServlet</url-pattern>
     <url-pattern>/multiply</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CalculationServlet</display-name>
+    <servlet-name>CalculationServlet</servlet-name>
+    <servlet-class>test.CalculationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CalculationServlet</servlet-name>
+    <url-pattern>/CalculationServlet</url-pattern>
+    <url-pattern>/calculate</url-pattern>
+  </servlet-mapping>
 </web-app>

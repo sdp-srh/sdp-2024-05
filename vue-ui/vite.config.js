@@ -13,10 +13,14 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
     ,
-  server: {
-    proxy: {
-      '/multiply': 'http://localhost:8080'
+    server: {
+      proxy: {
+        '/calculate': {
+          target: 'http://localhost:8080/WebCalculator',
+          changeOrigin: true,
+          rewrite: (path) => path.replace(/^\/calculate/, '/calculate')
+        }
+      }
     }
-  }  
   }
 })

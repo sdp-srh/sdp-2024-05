@@ -1,3 +1,12 @@
+# create the project:
+https://vuejs.org/guide/quick-start  
+
+
+
+
+
+
+# Standard descriptions
 # vue-ui
 
 This template should help get you started developing with Vue 3 in Vite.
